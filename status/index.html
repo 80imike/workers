@@ -853,7 +853,7 @@
                             const ratio = parseFloat(String(rawRatio));
                             if (!isNaN(ratio)) {
                                 dayData.ratio = ratio;
-                                if (ratio >= 99.5) {
+                                if (ratio >= 99.9) {
                                     dayData.status = 'up';
                                 } else if (ratio > 0) {
                                     dayData.status = 'partial';
