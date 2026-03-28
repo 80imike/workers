@@ -31,13 +31,13 @@ https://developers.cloudflare.com/workers/about/limits/
 
 额度顶不住了，使用量大请用自己的账号搭建服务吧，谢谢！！！  
 The amount can't hold up, please use your account to build the service if you use a lot, thank you! ! !  
-![溢出](https://gs.zme.ink/2019/11/03/0752457693.png)
+![溢出](https://s1.netnr.eu.org/2019/11/03/0752457693.png)
 
 
 # 🧡 status
 由 UptimeRobot API 提供自定义域名的状态页面，配置您的只读 api_key  
 Status page for custom domains powered by UptimeRobot API, configured with your read-only api_key  
-https://status.zme.ink
+https://status.netnr.eu.org
 
 # Source
 <https://github.com/netnr/workers>
