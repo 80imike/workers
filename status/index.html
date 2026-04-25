@@ -894,7 +894,7 @@
                 // Calculate statistics
                 const validDays = gridData.filter(d => d.ratio !== null);
                 const avgUptime = validDays.length > 0
-                    ? (validDays.reduce((sum, d) => sum + d.ratio, 0) / validDays.length).toFixed(2)
+                    ? parseFloat((validDays.reduce((sum, d) => sum + d.ratio, 0) / validDays.length).toFixed(2)).toString()
                     : 'N/A';
 
                 // Get monitor status information

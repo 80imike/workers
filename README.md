@@ -15,7 +15,7 @@ Convert HTTP to HTTPS
 ### 使用 Usage
 - `https://cors.eu.org/{URL}`
 - <https://cors.eu.org/https://api.github.com>
-- <https://cors.eu.org/http://nginx.org/download/nginx-1.20.2.tar.gz>
+- <https://cors.eu.org/http://nginx.org/download/nginx-1.30.0.tar.gz>
 
 ```js
 // 拷贝到控制台运行 Copy to the console and run
