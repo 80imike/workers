@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>netnr.loggly.com</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./loggly.css" />
+</head>
+
+<body>
+    <div id="app">
+        <header class="toolbar">
+            <div class="toolbar-left">
+                <span class="logo">netnr.loggly.com</span>
+                <div class="time-chips" id="timeChips"></div>
+                <span id="statusText" class="status-text"></span>
+            </div>
+            <div class="toolbar-right"></div>
+        </header>
+
+        <div class="main">
+            <aside class="sidebar">
+                <div class="sidebar-head">
+                    <span>Fields</span>
+                    <span id="fieldTotal" class="badge"></span>
+                </div>
+                <input id="fieldFilter" class="field-filter" value="json." placeholder="Filter fields..." />
+                <ul id="fieldList" class="field-list">
+                    <li class="hint-item">Run query to load fields</li>
+                </ul>
+            </aside>
+
+            <section class="results" id="resultsArea">
+                <div class="welcome">
+                    <p>1. Click a time range above to query directly</p>
+                    <p>2. Select a field on the left to view stats; recent 30 details show on the right</p>
+                    <p>3. Click a specific stat value to filter details on the right</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./loggly.js"></script>
+</body>
+
+</html>

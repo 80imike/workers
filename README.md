@@ -4,40 +4,32 @@ To block a large number of requests, WAF has blocked keywords .m3u8 .ts .m4 .acc
 > ### 2024-01-31 不受限制的代理服务请使用 https://seep.eu.org 
 2024-01-31 For unrestricted proxy service please use https://seep.eu.org
 
-
-# 🧡 cors (Cloudflare Workers)
+### 🧡 cors.js
 支持跨域请求（转换不支持跨域请求的接口），可直接发起 ajax、fetch  
 Support cross-domain request  
 
 支持 HTTPS (解决远程数据接口不支持 HTTPS )  
 Convert HTTP to HTTPS
 
-### 使用 Usage
+#### 使用 Usage
 - `https://cors.eu.org/{URL}`
 - <https://cors.eu.org/https://api.github.com>
 - <https://cors.eu.org/http://nginx.org/download/nginx-1.30.0.tar.gz>
+- logs https://cors.eu.org/loggly
 
 ```js
 // 拷贝到控制台运行 Copy to the console and run
-var url = "http://nginx.org/en/CHANGES";
+let url = "http://nginx.org/en/CHANGES";
 await (await fetch(`https://cors.eu.org/${url}`)).text();
 ```
 
-### 开发 Dev
-https://developers.cloudflare.com/workers/get-started/guide/
+#### 开发 Dev
+- 安装依赖 / Install dependencies: `npm install`
+- 本地调试 / Local dev: `npm run dev`
+- 发布部署 / Deploy: `npm run prod`
+- 文档 / Docs: https://developers.cloudflare.com/workers/get-started/guide/
+- `wrangler.jsonc` `vars.logglyCustomerToken` Loggly / Source Setup / Customer Token
+- `wwwroot/loggly.js` `CONFIG.apiToken`：Loggly / Settings / API Token
 
-### 套餐 Price
-https://developers.cloudflare.com/workers/about/limits/
-
-额度顶不住了，使用量大请用自己的账号搭建服务吧，谢谢！！！  
-The amount can't hold up, please use your account to build the service if you use a lot, thank you! ! !  
-![溢出](https://s1.netnr.eu.org/2019/11/03/0752457693.png)
-
-
-# 🧡 status
-由 UptimeRobot API 提供自定义域名的状态页面，配置您的只读 api_key  
-Status page for custom domains powered by UptimeRobot API, configured with your read-only api_key  
-https://status.netnr.eu.org
-
-# Source
+### Source
 <https://github.com/netnr/workers>
